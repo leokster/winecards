@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WineCards - Deine Wein-Lern-App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6B2D3E 0%, #4A1F2C 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #6B2D3E;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 1.05em;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            color: #6B2D3E;
+            text-align: center;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .section ul {
+            padding-left: 40px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #2a2a2a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .app-badge {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>WineCards</h1>
+        <p>Entdecke die Welt des Weins – spielerisch und fundiert</p>
+        <div class="app-badge">
+            <p>Bald im App Store verfügbar</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🗺️</div>
+                <h3>Weinregionen</h3>
+                <p>Lerne die wichtigsten Weinregionen der Welt kennen – von Bordeaux bis Barolo, von Rioja bis Napa Valley.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🍇</div>
+                <h3>Rebsorten</h3>
+                <p>Entdecke über 30 wichtige Rebsorten mit detaillierten Informationen zu Aromen, Anbaugebieten und Weinstilen.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Quiz-Modus</h3>
+                <p>Teste dein Wissen mit interaktiven Flashcards und vertiefe dein Verständnis durch aktives Lernen.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Über WineCards</h2>
+            <p>
+                WineCards ist deine mobile Lern-App für Weinwissen. Ob du gerade erst in die Welt des Weins eintauchst
+                oder dein Wissen vertiefen möchtest – WineCards bietet dir fundierte Informationen in einem
+                übersichtlichen, modernen Format.
+            </p>
+            <p>
+                Die App wurde entwickelt, um komplexes Weinwissen zugänglich zu machen. Mit strukturierten Informationen
+                zu Weinregionen und Rebsorten sowie einem integrierten Quiz-System kannst du in deinem eigenen Tempo lernen
+                und dein Wissen festigen.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Funktionen</h2>
+            <ul>
+                <li><strong>Umfassende Weinregionen-Datenbank:</strong> Detaillierte Informationen zu Klima, Böden, Rebsorten und Weinstilen der wichtigsten Weinregionen</li>
+                <li><strong>Rebsorten-Enzyklopädie:</strong> Von Chardonnay bis Nebbiolo – lerne die Charakteristika jeder Rebsorte kennen</li>
+                <li><strong>Interaktives Lernen:</strong> Quiz-Modus mit Tap-to-Reveal-Funktion für effektives Lernen</li>
+                <li><strong>Merklisten:</strong> Markiere deine Favoriten und erstelle personalisierte Lernsets</li>
+                <li><strong>Suchfunktion:</strong> Finde schnell die Informationen, die du suchst</li>
+                <li><strong>Offline verfügbar:</strong> Alle Inhalte sind lokal gespeichert – lerne auch ohne Internetverbindung</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Für wen ist WineCards?</h2>
+            <ul>
+                <li>Weineinsteiger, die fundiertes Grundwissen aufbauen möchten</li>
+                <li>Weinliebhaber, die ihr Wissen vertiefen und strukturieren wollen</li>
+                <li>Gastronomiepersonal und Sommeliers in Ausbildung</li>
+                <li>Alle, die Wein besser verstehen und genießen möchten</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WineCards. Alle Rechte vorbehalten.</p>
+        <nav>
+            <a href="privacy.html">Datenschutzerklärung</a>
+            <a href="support.html">Support & Kontakt</a>
+        </nav>
+    </footer>
+</body>
+</html>
