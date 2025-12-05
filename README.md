@@ -48,7 +48,7 @@ See [privacy.html](privacy.html) for full details.
 
 For support inquiries, visit [support.html](support.html) or contact:
 
-**Email:** support@winecards-app.com
+**Email:** info@timrohner.ch
 
 ## Legal
 
